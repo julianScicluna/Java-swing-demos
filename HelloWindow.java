@@ -16,8 +16,9 @@ public class HelloWindow {
         //Create a JLabel with the text "Hey, look at me! I am text!"
         JLabel text = new JLabel("Hey, look at me! I am text!");
         //Set the text's colour to red
-        text.setColor(Color.RED);
-        frame.getContentPane.add(text);
+        text.setForeground(Color.RED);
+        //Add the label to the frame (window)'s content pane
+        frame.getContentPane().add(text);
         
         //Create a JButton with the text "I am a swing button!". For now it does nothing
         JButton button = new JButton("I am a swing button!");
