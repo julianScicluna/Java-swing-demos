@@ -3,17 +3,33 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 import java.awt.Color;
 import java.awt.ComponentOrientation;
 import java.awt.FlowLayout;
 import java.awt.Font;
-
+import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class LabelsDemo {
     public static void main(String[] args) {
+        try {
+            SwingUtilities.invokeAndWait(new Runnable() {
+                //WARNING: Swing is NOT thread-safe; execute all code involving swing components on the EDT to avoid a number of issues such as inconsistent GUI and object state and exceptions
+                public void run() {
+                    initialiseGUI();
+                }
+            });
+        } catch (InterruptedException ie) {
+            ie.printStackTrace();
+        } catch (InvocationTargetException ite) {
+            ite.printStackTrace();
+        }
+    }
+
+    public static void initialiseGUI() {
         JFrame frame = new JFrame("Labels demo");
         frame.setSize(500, 500);
         frame.setLayout(new FlowLayout());
