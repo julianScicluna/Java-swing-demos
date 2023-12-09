@@ -30,7 +30,7 @@ public class HelloDialog {
         }
     }
 
-    public void initialiseGUI() {
+    public static void initialiseGUI() {
         //Create a new window and set its size and layout
         JFrame frame = new JFrame("totally not a prank window...");
         frame.setSize(500, 500);
