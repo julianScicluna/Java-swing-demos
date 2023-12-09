@@ -13,6 +13,21 @@ import java.awt.event.ActionListener;
 
 public class HelloDialog {
     public static void main(String[] args) {
+        try {
+            SwingUtilities.invokeAndWait(new Runnable() {
+                //WARNING: Swing is NOT thread-safe; execute all code involving swing components on the EDT to avoid a number of issues such as inconsistent GUI and object state and exceptions
+                public void run() {
+                    initialiseGUI();
+                }
+            });
+        } catch (InterruptedException ie) {
+            ie.printStackTrace();
+        } catch (InvocationTargetException ite) {
+            ite.printStackTrace();
+        }
+    }
+
+    public void initialiseGUI() {
         //Create a new window and set its size and layout
         JFrame frame = new JFrame("totally not a prank window...");
         frame.setSize(500, 500);
