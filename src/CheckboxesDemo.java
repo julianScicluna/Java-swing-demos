@@ -8,7 +8,9 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import java.awt.Color;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.lang.reflect.InvocationTargetException;
 
 public class CheckboxesDemo {
@@ -29,7 +31,7 @@ public class CheckboxesDemo {
 
     public static void initialiseGUI() {
         //Create a new window and set its size and layout
-        JFrame frame = new JFrame("Checkboxes - a better way of accepting boolean input!");
+        JFrame frame = new JFrame("Checkboxes - a better way of accepting boolean input in java!");
         frame.setSize(500, 500);
         frame.setLayout(new FlowLayout());
 
@@ -65,6 +67,22 @@ public class CheckboxesDemo {
         //Disable this checkbox
         disabledCheckbox.setEnabled(false);
         disabledCheckboxPanel.add(disabledCheckbox);
+
+
+        JPanel textCheckboxPanel = new JPanel();
+        checkboxesPanel.add(textCheckboxPanel);
+
+        //Create a new JCheckbox (checkbox)
+        JCheckBox textCheckbox = new JCheckBox();
+        //Set this checkbox's text to "Do you want free ice-cream?"
+        textCheckbox.setText("Do you want ice-cream?");
+        //Set this checkbox's text colour to orange
+        textCheckbox.setForeground(Color.PINK);
+        //Set this checkbox's text font to YU Gothic light, italic and bold
+        textCheckbox.setFont(new Font("YU Gothic Light", Font.ITALIC + Font.BOLD, 20));
+        //Set this checkbox's background to blue
+        textCheckbox.setBackground(Color.BLUE);
+        textCheckboxPanel.add(textCheckbox);
 
 
         JPanel actionCheckboxPanel = new JPanel();
