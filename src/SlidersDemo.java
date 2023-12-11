@@ -164,19 +164,5 @@ public class SlidersDemo {
 
         //Make the main frame visible
         frame.setVisible(true);
-
-
-        JPanel sliderPanel = new JPanel();
-        slidersPanel.add(sliderPanel);
-
-        JLabel sliderLabel = new JLabel("");
-        sliderPanel.add(sliderLabel);
-
-        JSlider slider = new JSlider();
-        sliderLabel.setLabelFor(slider);
-        sliderPanel.add(slider);
-
-        //Make the main frame visible
-        frame.setVisible(true);
     }
 }
