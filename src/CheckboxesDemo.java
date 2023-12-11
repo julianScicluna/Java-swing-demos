@@ -35,7 +35,7 @@ public class CheckboxesDemo {
         frame.setSize(500, 500);
         frame.setLayout(new FlowLayout());
 
-        //A panel to store all the text fields
+        //A panel to store all the checkboxes
         JPanel checkboxesPanel = new JPanel();
         checkboxesPanel.setLayout(new BoxLayout(checkboxesPanel, BoxLayout.PAGE_AXIS));
         frame.getContentPane().add(checkboxesPanel);
