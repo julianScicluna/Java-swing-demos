@@ -39,7 +39,7 @@ public class ButtonsDemo {
 
     public static void initialiseGUI() {
         //Create a new window and set its size and layout
-        JFrame frame = new JFrame("Button, buttons everywhere!");
+        JFrame frame = new JFrame("Buttons, buttons everywhere!");
         frame.setSize(500, 500);
         frame.setLayout(new FlowLayout());
 
@@ -92,7 +92,7 @@ public class ButtonsDemo {
         actionButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Hey! You clicked me!");
-                //Display a popup with n information icon stating that the JButton was pressed
+                //Display a popup with an information icon stating that the JButton was pressed
                 JOptionPane.showMessageDialog(actionButton, "Oi, you clicked me!", "Message from button", JOptionPane.INFORMATION_MESSAGE);
             }
         });
