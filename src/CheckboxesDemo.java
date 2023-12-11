@@ -29,7 +29,7 @@ public class CheckboxesDemo {
 
     public static void initialiseGUI() {
         //Create a new window and set its size and layout
-        JFrame frame = new JFrame("Text fields: A new way of accepting input in java!");
+        JFrame frame = new JFrame("Checkboxes - a better way of accepting boolean input!");
         frame.setSize(500, 500);
         frame.setLayout(new FlowLayout());
 
