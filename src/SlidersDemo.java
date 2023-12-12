@@ -112,7 +112,6 @@ public class SlidersDemo {
         //Set the JSlider's label font
         colouredSlider.setFont(new Font("Algerian", Font.PLAIN, 12));
 
-
         colouredSliderLabel.setLabelFor(colouredSlider);
         colouredSliderPanel.add(colouredSlider);
 
