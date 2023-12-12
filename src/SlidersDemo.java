@@ -99,11 +99,20 @@ public class SlidersDemo {
         colouredSliderPanel.add(colouredSliderLabel);
 
         JSlider colouredSlider = new JSlider();
+        //Enable label painting
+        colouredSlider.setPaintLabels(true);
+        //Enable mark (tick) painting
+        colouredSlider.setPaintTicks(true);
+        //Set tick value difference (spacing) to 10
+        colouredSlider.setMajorTickSpacing(10);        
         //Set the JSlider's background colour to green
         colouredSlider.setBackground(Color.GREEN);
+        //Set the JSlider's foreground (label) colour to purple
+        colouredSlider.setForeground(new Color(130, 0, 130));
+        //Set the JSlider's label font
+        colouredSlider.setFont(new Font("Algerian", Font.PLAIN, 12));
 
-        //With the default Look and Feel, setForeground has no visible effects on JSliders
-        //colouredSlider.setForeground(Color.GREEN);
+
         colouredSliderLabel.setLabelFor(colouredSlider);
         colouredSliderPanel.add(colouredSlider);
 
