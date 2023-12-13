@@ -1,6 +1,4 @@
-import javax.swing.AbstractButton;
 import javax.swing.JButton;
-import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
