@@ -11,6 +11,7 @@ import javax.swing.SwingUtilities;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Point;
+import java.awt.Dialog.ModalityType;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
@@ -271,8 +272,8 @@ public class FramesDemo {
         modalDialogBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //Create a new dialog with the frame as an owner and the "modal" parameter set to "true" (the aforementioned properties can only be set in the constructor)
-                JDialog newDialog = new JDialog(frame, true);
+                //Create a new dialog with the frame as an owner and the "modalityType" parameter set to ModalityType.DOCUMENT_MODAL (the frame owner can only be set in the constructor)
+                JDialog newDialog = new JDialog(frame, ModalityType.DOCUMENT_MODAL);
                 //Set the dialog frame's title
                 newDialog.setTitle("That frame is my owner! (I am a modal)");
                 //Set the dialog size
@@ -341,7 +342,7 @@ public class FramesDemo {
         });
         contentPanel.add(windowListenerDialogBtn);
 
-        
+
         //Make the main frame visible
         frame.setVisible(true);
     }
