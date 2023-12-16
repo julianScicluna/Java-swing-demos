@@ -153,7 +153,7 @@ public class FramesDemo {
                 //Create a new JFrame (window)
                 JFrame newFrame = new JFrame();
                 //Set the window's title
-                newFrame.setTitle("How's my new icon?");
+                newFrame.setTitle("I'm maximised!");
                 //Set the frame's state to maximised on both axes
                 newFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
                 //Set the window's size to 350px by 350px
