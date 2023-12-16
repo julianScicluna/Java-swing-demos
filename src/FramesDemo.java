@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 
-public class App {
+public class FramesDemo {
     public static void main(String[] args) {
         try {
             SwingUtilities.invokeAndWait(new Runnable() {
