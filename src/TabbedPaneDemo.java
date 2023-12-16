@@ -83,8 +83,8 @@ public class TabbedPaneDemo {
         //Create another JPanel to store as yet another tab
         JPanel tab3Panel = new JPanel();
         //Add tab1Panel to the tabbed pane as a new tab
-        tabbedPane.addTab("Pizza Tab", tab3Panel);
-        tab3Panel.add(new JLabel("How delicious do you find pizza?"));
+        tabbedPane.addTab("Pizza Thursdays Tab", tab3Panel);
+        tab3Panel.add(new JLabel("How much do you enjoy Pizza Thursdays?"));
         //Create a slider with ticks and labels every (1) unit (slider examples shown on this very github repository)
         JSlider slider = new JSlider();
         slider.setPaintTicks(true);
