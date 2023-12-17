@@ -46,7 +46,7 @@ public class GraphicsDemo {
 
     public static void initialiseGUI() {
         //Create a new window and set its size and layout
-        JFrame frame = new JFrame("Artistic genius");
+        JFrame frame = new JFrame("Larry's artistic genius");
         //Set the frame's dimensions to 500px by 500px
         frame.setSize(500, 500);
 
