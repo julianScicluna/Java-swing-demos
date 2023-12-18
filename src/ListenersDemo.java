@@ -69,7 +69,6 @@ public class ListenersDemo {
         
         //Create a new panel with the below message
         AreaPanel areaPanel = new AreaPanel("Click me, drag me, use your mouse!\nAfter that, press keys!\nP.S.: Look at the console");
-        areaPanel.setPreferredSize(new Dimension(400, 400));
         //Add a amouse listener which listens for various events with the mouse
         areaPanel.addMouseListener(new MouseListener() {
             @Override
